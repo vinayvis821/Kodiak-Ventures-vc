@@ -1,0 +1,142 @@
+<!--Website Designed and coded by Vinay Viswanathan-->
+<!--Thanks for responding Lucas and Jake-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kodiak Ventures</title>
+    <link rel="shortu icon" type="image/jpg" href="images/favicon.jpg">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+
+            <div class="navigation">
+                <a class="logo" href="index.html">
+                <img class= "bruh" src="images/bearlogo.jpg" alt="logo" width="72px" height="50px">
+                </a>
+                <ul class="primary">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="pages/initiatives.html">Initiatives</a></li>
+                    <li><a href="pages/mentors.html">Mentors</a></li>
+                    <li><a href="https://kodiakvc.notion.site/The-Kodiak-Collective-9cc9eb20fa6e49fbb20292841d732ef8" target="_blank">Resources</a><l/i>
+                    <li><a href="pages/team.html">Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"> </div>
+
+    <div class="hero">
+        <img src="images/hero.jpg" width=400px heigh=300px alt="Kodiak Ventures background">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Kodiak Ventures</h1>
+                <p class="subhead">Growing WashU’s Startup Ecosystem <br>Turning Students into Founders</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="space"> </div>
+
+    <div class="What-is-it">    
+        <!--<div class="container">-->
+            <p>What is Kodiak Ventures?</p> 
+            <div id="menu-outer">
+            <div class="table">
+            <ul id="horizontal-list">
+                <li><img id="one"src="../images/grey-bear.jpg"></li>
+                <li><img id="two"src="../images/grey-bear.jpg"></li>
+                <li><img id="three" src="../images/grey-bear.jpg"></li>
+                <li><img id="four" src="../images/grey-bear.jpg"></li>
+                <li><img id="five" src="../images/grey-bear.jpg"></li>
+            </ul>
+            </div>
+            </div>
+            <div id="menu-outer">
+            <div class="table2">
+            <ul id="horizontal-list2">
+                <li><a href="#MS">Match</a></li>
+                <li><a href="#AI">Accelerate</a></li>
+                <li><a href="#MM">Workshops</a></li>
+                <li><a href="#GF">Mentors</a></li>
+                <li><a href="#BS">Funding</a></li>
+            </ul>
+            </div>
+            </div>
+        <!--</div>-->
+    </div>
+
+    <div class="space1">
+    </div>
+
+    <div class="About-what-it-is" id="MS">
+        <div class="container">
+                <p class="main" id="AI">Matching students</p>
+                    <p class="sidebar">We match WashU’s students together from all backgrounds to enroll in our accelerator program and launch their startups as a team.  
+                    </p>
+                <p class="main" id="MM">Accelerate your venture</p>
+                    <p class="sidebar"> Your product is key to all other aspects of growing your venture. 
+                    We host a product-centric curriculum grounded in case studies from professionals. 
+                    Each week, we have a speaker from a leading venture capital firm, accelerator, 
+                    or successful startup discuss a topic critical to developing your product to ensure
+                     venture growth. 
+                    </p>
+                <p class="main" id="GF">Workshops and deliverables</p>
+                    <p class="sidebar">Work alongside mentors and other WashU founders on meeting tangible milestones and showcasing your startup's potential to investors, co-working space included.
+                    </p>
+                <p class="main" id="BS">Meet your mentor</p>
+                    <p class="sidebar"> Your team is paired with a mentor during our accelerator to be the ultimate resource for growing your network and understanding how to manage yourself and your venture.  
+                    </p>
+                <p class="main">Get funded</p>
+                    <p class="sidebar"> With our non-equity investments, we give your startup the financial support it needs to ensure that a lack of capital is not a barrier towards operating smoothly and meeting all your milestones.
+                    </p>
+        </div>
+    </div>
+
+    
+
+    <div class="wrapper">
+            <h2>Join our newsletter!</h2>
+
+            <p>(We'll never send you spam)</p>
+
+            <div class="newsletter">
+                <div>
+                <form action="https://sheetdb.io/api/v1/wt7ahadc5fuid" method="POST" id="sheetdb-form">
+                <label for="email"></label>
+                <input type="email" name="data[email]" id="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe!</button>
+                </form>
+                <script>
+                    var form = document.getElementById('sheetdb-form');
+                    form.addEventListener("submit", e => {
+                        e.preventDefault();
+                        fetch(form.action, {
+                            method : "POST",
+                            body: new FormData(document.getElementById("sheetdb-form")),
+                        }).then(
+                            response => response.json()
+                        ).then((html) => {
+                        // you can put any JS code here
+                        alert('You have successfully joined the newsletter!')
+                        });
+                    });
+                </script>
+                </div>
+            </div>
+    </div>
+
+    <div class="foot">
+            <div id="twitter"><a href="https://twitter.com/ventureskodiak?s=21" target="_blank"><img src="images/twitter.svg" width="25px" height="25px"></a></div>
+            <div id="instagram"><a href="https://www.instagram.com/kodiak.ventures/" target="_blank"><img src="images/instagram.svg" width="25px" height="25px"></a></div>
+            <div id="linkedin"><a href="https://www.linkedin.com/company/kodiak-ventures/" target="_blank"><img src="images/linkedin.svg" width="25px" height="25px"></a></div>
+            <div id="email"><a href="mailto:inquiries@kodiakventures.vc?subject=General%20Inquiry" target="_blank"><img src="images/email.svg"width="25px" height="25px"></a></div>
+    </div>
+
+</body>
+</html>
