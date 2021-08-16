@@ -209,7 +209,7 @@ iframe {
 	height: 300px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 750px) {
     .primary {
 		font-size: .4em !important;
         
@@ -275,4 +275,8 @@ iframe {
 	padding-top: 0;
 	display: flex;
 	justify-content: center;
+}
+
+.information a {
+	color: white;
 }
